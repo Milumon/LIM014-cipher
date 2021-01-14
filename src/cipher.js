@@ -26,11 +26,13 @@ const cipher = {
         if (letter == letter.toUpperCase()) {
           let ASCIIvalue = (letter.charCodeAt(0) - 65 + offset) % 26 + 65;
           let finalLetter = String.fromCharCode(ASCIIvalue);
-          stringResult = stringResult + finalLetter;
+          stringResult += finalLetter;
         } else {
-          let ASCIIvalue = (letter.charCodeAt(0) - 97 + offset) % 26 + 97;
+          console.log(letter.charCodeAt(0)); 
+          let ASCIIvalue = (letter.charCodeAt(0) - 97 + offset ) % 26 + 97;
           let finalLetter = String.fromCharCode(ASCIIvalue);
-          stringResult = stringResult + finalLetter;
+          stringResult += finalLetter; 
+
         }
       } else {
         stringResult = stringResult + letter;
@@ -61,11 +63,12 @@ const cipher = {
         if (letter == letter.toUpperCase()) {
           let ASCIIvalue = (letter.charCodeAt(0) + 65 - offset ) % 26 + 65;
           let finalLetter = String.fromCharCode(ASCIIvalue);
-          stringResult = stringResult + finalLetter;
+          stringResult += finalLetter;
         } else {
-          let ASCIIvalue = (letter.charCodeAt(0) - 97 - offset + 26) % 26  + 97 ;
+          console.log(letter.charCodeAt(0));
+          let ASCIIvalue = (letter.toUpperCase().charCodeAt(0) + 65 - offset ) % 26 + 65;
           let finalLetter = String.fromCharCode(ASCIIvalue);
-          stringResult = stringResult + finalLetter;
+          stringResult += finalLetter.toLowerCase(); 
         }
 
       } else {
