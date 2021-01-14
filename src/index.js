@@ -10,25 +10,28 @@ let decodeButton = document.getElementById('btnDecode');
 decodeButton.addEventListener('click', cipherDecode);
 
 function cipherEncode() {
+
+  let textEncode = '';
   // obtener el valor del offset
   let offsetValue = parseInt(document.getElementById('offset').value);
   // obtener el valor del string
   let stringValue = document.getElementById('decode').value;
   // obtener el resultado del descifrado
-  let textEncode = cipher.encode(offsetValue, stringValue);
-  // asignar el valor al textArea
+  Math.sign(offsetValue) == 1 ? textEncode = cipher.encode(offsetValue, stringValue) : textEncode = cipher.decode(offsetValue, stringValue)
+   // asignar el valor al textArea
   document.getElementById('encoded').value = textEncode;
 }
 
 
 
 function cipherDecode() {
+  let textEncode = '';
   // obtener el valor del offset
   let offsetValue = parseInt(document.getElementById('offset').value);
   // obtener el valor del string
   let stringValue = document.getElementById('decode').value;
   // obtener el resultado del descifrado
-  let textEncode = cipher.decode(offsetValue, stringValue);
-  // asignar el valor al textArea
+  Math.sign(offsetValue) == 1 ? textEncode = cipher.decode(offsetValue, stringValue) : textEncode = cipher.encode(offsetValue, stringValue)
+   // asignar el valor al textArea
   document.getElementById('encoded').value = textEncode;
 }
