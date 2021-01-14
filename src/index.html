@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+
+<head>
+  <meta charset="utf-8">
+  <title>Cipherlove</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div id="root">
+
+    <!-- home -->
+    <section id="home" class="grid hide">
+
+      <div id="boxImage" class="boxImage">
+        <div class="image">
+        </div>
+      </div>
+
+      <div id="login" class="login">
+        <div>
+          <h1 class="title">Cipherlove</h1>
+          <form>
+            <label>
+              Usuario
+            </label>
+            <input type="text" value="">
+            <label>
+              Contraseña
+            </label>
+            <input type="text" value="">
+
+            <input type="button" value="Ingresar">
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- cipher -->
+    <section id="home2">
+
+      <div class="cipher">
+        <h1 class="title2">Cipherlove</h1>
+        <h1 class="subtitle">Hola <p class="user">TEST</p>, ¡No hay barreras para el amor, comunícate por nuestra
+          plataforma!</h1>
+        <div class="offset">
+          <label>Offset: </label> <input type="number" id="offset"> </div>
+      </div>
+
+      <div class="grid3">
+        <div class="textA">
+          <textarea id="decode"></textarea>
+        </div>
+
+        <div class="f1">
+          <input type="button" id="btnEncode" value="CIFRAR →">
+        </div>
+
+        <div class="f2">
+          <input type="button" id="btnDecode" value="DESCIFRAR →">
+        </div>
+
+
+        <div class="textB">
+          <textarea id="encoded" class="textB"></textarea> 
+        </div>
+
+         
+      </div>
+
+      <div class="f3">
+          <input type="button" value="Cerrar sesión"> 
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+
+      
+    </section>
+
+
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

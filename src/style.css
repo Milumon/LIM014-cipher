@@ -1,0 +1,248 @@
+/* font-family: 'Rochester', cursive; */
+
+* {
+  margin: 0 auto; 
+
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;  
+  background: #F3EDE1;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+}
+
+
+.login {
+  background: #F3EDE1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.boxImage {
+  background: #F3EDE1;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  height: 836px;
+  width: 726px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-right: 50px;
+  background-image: url('./Images/lovecouple.jpg');
+  background-repeat: no-repeat;
+}
+
+.title {
+  margin-top: 110px;
+  margin-right: 18px;
+  font-family: 'Rochester', cursive;
+  font-size: 185px;
+  font-weight: 400;
+}
+
+form {
+  margin-top: 70px;
+}
+
+label {
+  margin: 30px 0 15px 0;
+  font-size: 27px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+form > input[type=text] {
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  width: 300px;
+  height: 45px;
+
+}
+
+form >input[type=button] {
+
+  background: red;
+  width: 200px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  Line-height: 28px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* CIPHER */
+
+ 
+.cipher {
+  text-align: left; 
+  width: 100%;
+  height: 100%;
+  background: url('./Images/lovehearts.png');
+  background-repeat: no-repeat;
+  background-position: 1200px;
+  background-size: 450px; 
+}
+
+.title2 {
+  margin-top: 110px;
+  margin-left: 150px;
+  font-family: 'Rochester', cursive;
+  font-size: 165px;
+  font-weight: 400;
+}
+
+
+.user {
+  display: inline-block;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  margin: 40px 0px 0px 150px;
+  font-weight: 400;
+}
+
+
+.offset {
+  margin: 15px 0px 0px 150px;
+  width: 200px; 
+
+}
+
+.offset>label {
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.offset>input {
+
+  margin: 0px 0px 0px 20px;
+  height: 45px;
+  background: white;
+  display: inline-block;
+  width: 60px;
+  border-radius: 5px; 
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.grid3 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:  "textA  f1  textB"
+                        "textA  f2  textB"
+                        "f3     f f ";
+}
+
+.textA {
+  grid-area: textA;
+}
+
+.f1 {
+  grid-area: f1;
+}
+
+.f2 {
+  grid-area: f2;
+} 
+
+.f3 {
+  grid-area: f3;
+}
+
+.textB {
+  grid-area: textB;
+
+}
+ 
+.textB> textarea {
+
+  background: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 200px;
+  width: 650px;
+  margin-right: 150px; 
+  box-sizing: border-box;
+  padding: 10px;
+}
+ 
+.textA> textarea { 
+  background: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 200px;
+  width: 650px;
+  margin-left: 150px;
+  font-size: 20px; 
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.f1 > input, .f2 > input {
+  margin: 20px 50px 0px 50px; 
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  background: red;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal; 
+  border: 0px;
+}
+
+.f3 > input{ 
+  margin: 35px 0px 0px 150px;
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal; 
+  border: 0px; 
+}
