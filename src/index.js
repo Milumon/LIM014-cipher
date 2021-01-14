@@ -17,7 +17,7 @@ function cipherEncode() {
   // obtener el valor del string
   let stringValue = document.getElementById('decode').value;
   // obtener el resultado del descifrado
-  Math.sign(offsetValue) == 1 ? textEncode = cipher.encode(offsetValue, stringValue) : textEncode = cipher.decode(offsetValue, stringValue)
+  Math.sign(offsetValue) == 1 ? textEncode = cipher.encode(offsetValue, stringValue) : textEncode = cipher.decode(Math.abs(offsetValue), stringValue)
    // asignar el valor al textArea
   document.getElementById('encoded').value = textEncode;
 }
@@ -31,7 +31,7 @@ function cipherDecode() {
   // obtener el valor del string
   let stringValue = document.getElementById('decode').value;
   // obtener el resultado del descifrado
-  Math.sign(offsetValue) == 1 ? textEncode = cipher.decode(offsetValue, stringValue) : textEncode = cipher.encode(offsetValue, stringValue)
+  Math.sign(offsetValue) == 1 ? textEncode = cipher.decode(offsetValue, stringValue) : textEncode = cipher.encode(Math.abs(offsetValue), stringValue)
    // asignar el valor al textArea
   document.getElementById('encoded').value = textEncode;
 }
