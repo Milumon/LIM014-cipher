@@ -255,3 +255,7 @@ form>input[type=button] {
   font-style: normal;
   border: 0px;
 }
+
+@media only screen  and (min-width : 1224px) {
+  /* Styles */
+  }

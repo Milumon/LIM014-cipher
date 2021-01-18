@@ -67,9 +67,7 @@ let user = document.getElementById('user').value;
 
 
 function closeSesion(){
-
-
-  
+ 
   var inputs = document.getElementsByTagName("input");
   for (var i = 0; i < inputs.length; i++) {
       if (inputs[i].type == "text") {
