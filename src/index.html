@@ -16,7 +16,7 @@
   <div id="root">
 
     <!-- home -->
-    <section id="home" class="grid hide">
+    <section id="homeBoxOne" class="grid .show">
 
       <div id="boxImage" class="boxImage">
         <div class="image">
@@ -28,15 +28,15 @@
           <h1 class="title">Cipherlove</h1>
           <form>
             <label>
-              Usuario
+              Tu nombre
             </label>
-            <input type="text" value="">
+            <input id="user" type="text" value="">
             <label>
-              Contraseña
+              Clave de acceso
             </label>
-            <input type="text" value="">
+            <input id="password" type="text" value="">
 
-            <input type="button" value="Ingresar">
+            <input id="enterCipher" type="submit" value="Ingresar">
           </form>
         </div>
       </div>
@@ -44,11 +44,11 @@
     </section>
 
     <!-- cipher -->
-    <section id="home2">
+    <section id="homeBoxTwo" class="hide">
 
       <div class="cipher">
         <h1 class="title2">Cipherlove</h1>
-        <h1 class="subtitle">Hola <p class="user">TEST</p>, ¡No hay barreras para el amor, comunícate por nuestra
+        <h1 class="subtitle">Hola <p id="userName" class="userName">__</p>, ¡No hay barreras para el amor, comunícate por nuestra
           plataforma!</h1>
         <div class="offset">
           <label>Offset: </label> <input type="number" id="offset"> </div>
@@ -76,7 +76,7 @@
       </div>
 
       <div class="f3">
-          <input type="button" value="Cerrar sesión"> 
+          <input id="close" type="submit" value="Cerrar sesión"> 
     </div>
 
       

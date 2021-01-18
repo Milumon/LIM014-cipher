@@ -2,17 +2,12 @@
 
    encode: function (offset, string) {
 
-
-     let words = 'A B C D E F G H I J K L M N O P Q R S T U V W X Y Z'.split(" ");
-
+     let words = 'A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z'.split(" ");
      let stringResult = '';
 
-     if (typeof (offset) !== 'number') {
-       throw TypeError('El offset debe ser un número');
-
-     } else if (typeof (string) !== 'string') {
-       throw TypeError('El string debe ser un string');
-     }
+     if (typeof (offset) !== 'number' || typeof (string) !== 'string') {
+       throw TypeError('El offset debe ser un número y el mensaje debe ser un string');
+     }  
 
      for (var i = 0; i < string.length; i++) {
        let letter = string[i];
@@ -31,18 +26,11 @@
 
    decode: function (offset, string) {
 
-     let words = 'A B C D E F G H I J K L M N O P Q R S T U V W X Y Z'.split(" ");
-
+     let words = 'A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z'.split(" ");
      let stringResult = '';
-
-     if (typeof (offset) !== 'number') {
-       throw TypeError('El offset debe ser un número');
-
-       /* tipo de errores validar un error de tipo de dato */
-
-     } else if (typeof (string) !== 'string') {
-       throw TypeError('El string debe ser un string');
-     }
+     if (typeof (offset) !== 'number' || typeof (string) !== 'string') {
+      throw TypeError('El offset debe ser un número y el mensaje debe ser un string');
+    }
 
      for (var i = 0; i < string.length; i++) {
        let letter = string[i];
