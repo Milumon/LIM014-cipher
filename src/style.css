@@ -30,6 +30,7 @@ body {
 }
 
 .grid {
+  padding: 0px 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100%;
@@ -37,31 +38,29 @@ body {
 
 
 .login {
-  background: #F3EDE1;
-  width: 100%;
+  background: #F3EDE1; 
   height: 100%;
   text-align: center;
+  padding: 80px;
+
 }
 
 .boxImage {
-  background: #F3EDE1;
-  width: 100%;
+  background: #F3EDE1; 
   height: 100%;
+  padding: 80px;
 }
 
 .image {
-  height: 836px;
-  width: 726px;
-  margin: 0 auto;
-  margin-top: 100px;
-  margin-right: 50px;
-  background-image: url('./Images/lovecouple.jpg');
-  background-repeat: no-repeat;
+  background-image: url(./Images/lovecouple.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100%;
+  width: 600px;
 }
 
-.title {
-  margin-top: 110px;
-  margin-right: 18px;
+.title { 
   font-family: 'Rochester', cursive;
   font-size: 185px;
   font-weight: 400;
@@ -89,7 +88,7 @@ form>input[type=text] {
 
 }
 
-form>input[type=button] {
+form>input[type=submit] {
 
   background: red;
   width: 200px;
@@ -116,19 +115,16 @@ form>input[type=button] {
 /* CIPHER */
 
 
-.cipher {
-  text-align: left;
-  width: 100%;
-  height: 100%;
-  background: url('./Images/lovehearts.png');
-  background-repeat: no-repeat;
-  background-position: 85%;
-  background-size: 450px;
+.cipher {  
+ 
+    background: url(./Images/lovehearts.png);
+    background-repeat: no-repeat;
+    background-position: 85%;
+    background-size: 450px;
+    padding: 0px 150px;
 }
 
 .title2 {
-  margin-top: 110px;
-  margin-left: 150px;
   font-family: 'Rochester', cursive;
   font-size: 165px;
   font-weight: 400;
@@ -142,13 +138,13 @@ form>input[type=button] {
 .subtitle {
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
-  margin: 40px 0px 0px 150px;
+  margin: 40px 0px;
   font-weight: 400;
 }
 
 
 .offset {
-  margin: 15px 0px 0px 150px;
+  margin: 15px 0px;
   width: 200px;
 
 }
@@ -173,6 +169,7 @@ form>input[type=button] {
 }
 
 .grid3 {
+  padding: 0px 150px;
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -187,15 +184,18 @@ form>input[type=button] {
 }
 
 .f1 {
+  padding: 20px 50px;
   grid-area: f1;
 }
 
 .f2 {
+  padding: 20px 50px;
   grid-area: f2;
 }
 
 .f3 {
-  grid-area: f3;
+  grid-area: f3; 
+  margin: 0px;
 }
 
 .textB {
@@ -208,8 +208,7 @@ form>input[type=button] {
   border-radius: 10px;
   border: 2px solid black;
   height: 200px;
-  width: 650px;
-  margin-right: 150px;
+  width: 650px; 
   font-size: 20px;
   box-sizing: border-box;
   padding: 10px;
@@ -220,16 +219,14 @@ form>input[type=button] {
   border-radius: 10px;
   border: 2px solid black;
   height: 200px;
-  width: 650px;
-  margin-left: 150px;
+  width: 650px; 
   font-size: 20px;
   box-sizing: border-box;
   padding: 10px;
 }
 
 .f1>input,
-.f2>input {
-  margin: 20px 50px 0px 50px;
+.f2>input { 
   width: 160px;
   height: 50px;
   border-radius: 10px;
@@ -243,7 +240,7 @@ form>input[type=button] {
 }
 
 .f3>input {
-  margin: 35px 0px 0px 150px;
+  margin: 35px 0px 0px 0px;
   width: 160px;
   height: 50px;
   border-radius: 10px;
