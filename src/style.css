@@ -52,7 +52,7 @@ body {
 }
 
 .image {
-  background-image: url(./Images/lovecouple.jpg);
+  background-image: url("./Images/lovecouple.jpg");
   background-repeat: no-repeat; 
   background-size: cover;
   box-sizing: border-box;
@@ -117,7 +117,7 @@ form>input[type=submit] {
 
 .cipher {  
  
-    background: url(./Images/lovehearts.png);
+    background: url("./Images/lovecouple.jpg");
     background-repeat: no-repeat;
     background-position: 85%;
     background-size: 450px;
