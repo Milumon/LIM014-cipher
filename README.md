@@ -1,4 +1,4 @@
-# Cifrado César
+# Cifrado César : [LINK](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 
 ## Definición de Producto
 * El público objetivo son los amantes que deseen encriptar sus mensajes de amor.
@@ -16,7 +16,7 @@ Feedback:
 
 * Añadir placeholders.
 * Añadir un input para que el usuario ponga su nombre.
-* Que los botones de cifrado y decifrado apuntaran a la pantalla izquierda.
+* gQue los botones de cifrado y decifrado apuntaran a la pantalla izquierda.
  
 
 ## Índice

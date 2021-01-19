@@ -33,23 +33,21 @@ body {
 
 
 .login {
-  background: #F3EDE1; 
-  height: 100%;
+  background: #F3EDE1;  
   text-align: center;
   padding: 80px;
 
 }
 
 .boxImage {
-  background: #F3EDE1; 
-  height: 100%;
-  padding: 80px;
+  background: #F3EDE1;  
+  padding: 80px 50px 0px 100px;
 }
 
 .image {
   background-image: url("./Images/lovecouple.jpg");
   background-repeat: no-repeat; 
-  background-size: cover;
+  background-size: auto;
   box-sizing: border-box;
   height: 100%;
   width: 600px;

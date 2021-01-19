@@ -6,7 +6,7 @@
      let stringResult = '';
 
      if (typeof (offset) !== 'number' || typeof (string) !== 'string') {
-       throw TypeError('El offset debe ser un número y el mensaje debe ser un string');
+       throw TypeError('El offset debe ser un número y el mensaje debe ser una cadena de texto');
      }  
 
      for (var i = 0; i < string.length; i++) {
@@ -29,7 +29,7 @@
      let words = 'A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z'.split(" ");
      let stringResult = '';
      if (typeof (offset) !== 'number' || typeof (string) !== 'string') {
-      throw TypeError('El offset debe ser un número y el mensaje debe ser un string');
+      throw TypeError('El offset debe ser un número y el mensaje debe ser una cadena de texto');
     }
 
      for (var i = 0; i < string.length; i++) {

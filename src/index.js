@@ -74,10 +74,16 @@ function validateUser(event) {
   let user = document.getElementById('user').value;
 
   if (password == 'cipherlove') {
+    if (user) { 
     userName.innerHTML = user[0].toUpperCase() + user.slice(1);
     homeBoxOne.classList.replace(".show", "hide");
     homeBoxTwo.classList.replace("hide", "show");
-  } else {
+    } 
+    else {
+      errorSubmit.innerHTML = "Ingresa tu nombre de usuario";
+    }
+  }  
+  else {
     errorSubmit.innerHTML = "Contraseña incorrecta";
   }
 }
