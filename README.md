@@ -1,5 +1,24 @@
 # Cifrado César
 
+## Definición de Producto
+* El público objetivo son los amantes que deseen encriptar sus mensajes de amor.
+* El propósito del Cipherlove es ayudarlos a poder comunicarse sin que nadie más que ellos entienda el contenido del mensaje.
+* La página solo permite el acceso al cifrador a las personas autenticadas
+* Contraseña de acceso: cipherlove
+***
+## Diseño de prototipos de baja fidelidad
+
+**Primer prototipo**
+![prototipo1](./src/Cipher/Cipher-1.jpeg)
+![prototipo2](./src/Cipher/Cipher-2.jpeg)
+
+Feedback: 
+
+Añadir placeholders.
+Añadir un input para que el usuario ponga su nombre.
+Que los botones de cifrado y decifrado apuntaran a la pantalla izquierda.
+ 
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
