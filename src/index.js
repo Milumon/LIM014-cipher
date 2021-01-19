@@ -1,6 +1,11 @@
-/* eslint-disable no-undef */ 
+/* eslint-disable no-undef */
 import cipher from './cipher.js';
  
+
+let btnPopUp = document.getElementById('btnPopUp');
+btnPopUp.addEventListener('click', showModal); 
+
+document.addEventListener("click", hideModal); 
 
 // botón de codificar
 btnEncode.addEventListener('click', cipherEncode);
@@ -38,7 +43,15 @@ function cipherEncode() {
   encoded.value = textEncode;
 }
 
+function showModal(event) { 
+  event.stopPropagation(); 
+  modal.classList.replace("hide", "show");  
+  
+}
 
+function hideModal(event) { 
+  event.stopPropagation();  
+  modal.classList.replace("show", "hide");  }
 
 function cipherDecode() {
   let textEncode = '';
@@ -84,20 +97,19 @@ function closeSesion() {
 
 }
 
- 
+
 
 function offsetValueIncrement() {
   let offsetValue = parseInt(document.getElementById('offset').value);
   let newValue = offsetValue + 1;
-  
+
   if (offsetValue) {
     document.getElementById("offset").value = newValue;
-  } 
-  else {
+  } else {
     document.getElementById("offset").value = "1";
   }
 
-  timer = setTimeout(function() {
+  timer = setTimeout(function () {
     offsetValueIncrement();
   }, 200);
 }
@@ -107,13 +119,11 @@ function offsetValueDecrement() {
   let newValue = offsetValue - 1;
   if (offsetValue) {
     document.getElementById("offset").value = newValue;
-  } 
-  else {
+  } else {
     document.getElementById("offset").value = "-1";
   }
 
-  timer = setTimeout(function() {
+  timer = setTimeout(function () {
     offsetValueDecrement();
   }, 200);
 }
- 

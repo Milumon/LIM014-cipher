@@ -175,6 +175,7 @@ form>input[type=submit] {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "textA  f1  textB"
+    "textA  f4  textB"
     "textA  f2  textB"
     "f3     f f ";
 }
@@ -193,6 +194,11 @@ form>input[type=submit] {
   grid-area: f2;
 }
 
+.f4 {
+  padding: 20px 50px;
+  grid-area: f4;
+}
+
 .f3 {
   grid-area: f3; 
   margin: 0px;
@@ -207,8 +213,7 @@ form>input[type=submit] {
   background: white;
   border-radius: 10px;
   border: 2px solid black;
-  height: 200px;
-  width: 650px; 
+  height: 100%;  width: 650px; 
   font-size: 20px;
   box-sizing: border-box;
   padding: 10px;
@@ -218,7 +223,7 @@ form>input[type=submit] {
   background: white;
   border-radius: 10px;
   border: 2px solid black;
-  height: 200px;
+  height: 100%;
   width: 650px; 
   font-size: 20px;
   box-sizing: border-box;
@@ -253,6 +258,22 @@ form>input[type=submit] {
   border: 0px;
 }
 
+.f4>input {
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  border: 0px;
+}
+
+
+
+
 #errorSubmit {
   height: 20px;
   color: red;
@@ -271,9 +292,45 @@ input[type=number]::-webkit-outer-spin-button {
 .offsetIncrement, .offsetDecrement {
   margin-left: 10px; 
   display: inline-block;
-  border-radius: 5px;
-  color: red;
+  border-radius: 5px; 
   width: 45px;
   height: 40px;
   background: white; 
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+ 
+
+
+.modal{ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  padding: 0 1.5rem;
+  transition: 0.5s easy all;
+   
+}
+
+.modal > .modal-container{
+  background-color: #fff;
+  max-width: 500px;
+  padding: 2rem;
+  margin: 10vh auto;
+  border-radius: 10px; 
+}
+
+.modal > .modal-container > h1{ 
+  text-align: center;
+}
+.modal > .modal-container > p{
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
 }

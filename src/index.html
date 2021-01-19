@@ -7,9 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
   <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 
@@ -24,21 +22,21 @@
         </div>
       </article>
 
-      <article id="login" class="login"   > 
-          <h1 class="title">Cipherlove</h1>
-          <form>
-            <label>
-              Tu nombre
-            </label>
-            <input id="user" type="text" placeholder="Escribe tu nombre" required>
-             <label>
-              Clave de acceso
-            </label>
-            <input id="password" type="password" placeholder="cipherlove" required>
-            <div id="errorSubmit"></div>
+      <article id="login" class="login">
+        <h1 class="title">Cipherlove</h1>
+        <form>
+          <label>
+            Tu nombre
+          </label>
+          <input id="user" type="text" placeholder="Escribe tu nombre" required>
+          <label>
+            Clave de acceso
+          </label>
+          <input id="password" type="password" placeholder="cipherlove" required>
+          <div id="errorSubmit"></div>
 
-            <input id="enterCipher" type="submit" value="Ingresar">
-          </form> 
+          <input id="enterCipher" type="submit" value="Ingresar">
+        </form>
       </article>
 
     </section>
@@ -48,19 +46,47 @@
 
       <article class="cipher">
         <h1 class="title2">Cipherlove</h1>
-        <h1 class="subtitle">Hola <p id="userName" class="userName">__</p>, ¡No hay barreras para el amor, comunícate por nuestra
+        <h1 class="subtitle">Hola <p id="userName" class="userName">__</p>, ¡No hay barreras para el amor, cifra tus
+          mensajes y comunícate con tu <br>persona favorita por nuestra
           plataforma!</h1>
         <div class="offset">
-          <label>Offset: </label> <input type="number" placeholder="000" id="offset">  <button id="offsetIncrement" class="offsetIncrement">+</button> <button id="offsetDecrement" class="offsetDecrement">-</button> </div>
+          <label>Offset: </label> <input type="number" placeholder="000" id="offset"> <button id="offsetIncrement"
+            class="offsetIncrement">+</button> <button id="offsetDecrement" class="offsetDecrement">-</button> </div>
       </article>
 
       <article class="grid3">
         <div class="textA">
-          <textarea id="decode"  placeholder="Escribe el texto a cifrar..."></textarea>
+          <textarea id="decode" placeholder="Escribe el texto a cifrar..."></textarea>
         </div>
 
         <div class="f1">
           <input type="button" id="btnEncode" value="CIFRAR →">
+        </div>
+
+        <div class="f4">
+          <input type="button" id="btnPopUp" value="INSTRUCCIONES">
+        </div>
+
+        <div class="modal hide" id="modal">
+          <div class="modal-container">
+            <h1>Instrucciones</h1>
+            <p>El cifrado César es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo
+              usaba para enviar órdenes secretas a sus generales en los campos de batalla.<br>
+
+              El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por
+              sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número
+              fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+
+            </p>
+            <p>
+              Por ejemplo, si usamos un desplazamiento (offset) de 3 posiciones: <br>
+
+La letra A se cifra como D.<br>
+La palabra CASA se cifra como FDVD<br><br>
+
+♥ Empieza a cifrar tus mensajes!! ♥
+            </p>
+          </div>
         </div>
 
         <div class="f2">
@@ -69,17 +95,13 @@
 
 
         <div class="textB">
-          <textarea id="encoded" placeholder="Este es el texto cifrado..."   class="textB"></textarea> 
+          <textarea id="encoded" placeholder="Este es el texto cifrado..." class="textB" disabled></textarea>
         </div>
 
         <div class="f3">
-          <input id="close" type="submit" value="Cerrar sesión"> 
-    </div>
+          <input id="close" type="submit" value="Cerrar sesión">
+        </div>
       </article>
-
-       
-
-      
     </section>
 
 
