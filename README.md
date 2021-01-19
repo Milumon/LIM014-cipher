@@ -9,8 +9,8 @@
 ## Diseño de prototipos de baja fidelidad
 
 **Primer prototipo**
-![prototipo1](./src/Cipher/Cipher-1.jpeg)
-![prototipo2](./src/Cipher/Cipher-2.jpeg)
+![prototipo1](./src/Cipher/Cipher-1.jpg)
+![prototipo2](./src/Cipher/Cipher-2.jpg)
 
 Feedback: 
 
