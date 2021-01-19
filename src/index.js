@@ -3,8 +3,7 @@ import cipher from './cipher.js';
  
 
 let btnPopUp = document.getElementById('btnPopUp');
-btnPopUp.addEventListener('click', showModal); 
-
+btnPopUp.addEventListener('click', showModal);  
 document.addEventListener("click", hideModal); 
 
 // botón de codificar
