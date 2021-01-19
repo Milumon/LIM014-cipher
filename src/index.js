@@ -1,8 +1,6 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-console */
+/* eslint-disable no-undef */ 
 import cipher from './cipher.js';
-
-console.log(cipher);
+ 
 
 // botón de codificar
 btnEncode.addEventListener('click', cipherEncode);
