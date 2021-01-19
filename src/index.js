@@ -91,7 +91,12 @@ function closeSesion() {
       inputs[i].value = '';
     }
   }
+
   errorSubmit.innerHTML = "";
+  decode.innerHTML = "";
+  encoded.innerHTML = "";
+  offset.value = ""; 
+
   homeBoxTwo.classList.replace("show", "hide");
   homeBoxOne.classList.replace("hide", ".show");
 
