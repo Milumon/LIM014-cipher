@@ -14,9 +14,9 @@
 
 Feedback: 
 
-Añadir placeholders.
-Añadir un input para que el usuario ponga su nombre.
-Que los botones de cifrado y decifrado apuntaran a la pantalla izquierda.
+* Añadir placeholders.
+* Añadir un input para que el usuario ponga su nombre.
+* Que los botones de cifrado y decifrado apuntaran a la pantalla izquierda.
  
 
 ## Índice
