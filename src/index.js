@@ -1,22 +1,41 @@
-/* eslint-disable no-undef */
-import cipher from './cipher.js';
  
+import cipher from './cipher.js';
 
+// primera pantalla
+let homeBoxOne = document.getElementById("homeBoxOne");  
+// segunda pantalla
+let homeBoxTwo = document.getElementById("homeBoxTwo"); 
+// offset 
+let offset = document.getElementById("offset"); 
+// errorSubmit
+let errorSubmit = document.getElementById("errorSubmit"); 
+// div del modal oculto
+let modal = document.getElementById("modal"); 
+// textAreaEncode
+let encoded = document.getElementById("encoded"); 
+// textAreaDecode 
+let decode = document.getElementById("decode"); 
+// boton de instrucciones que activa el modal oculto
 let btnPopUp = document.getElementById('btnPopUp');
 btnPopUp.addEventListener('click', showModal);  
 document.addEventListener("click", hideModal); 
 
 // botón de codificar
+let btnEncode = document.getElementById("btnEncode");
 btnEncode.addEventListener('click', cipherEncode);
 // botón de decodificar
+let btnDecode = document.getElementById("btnDecode");
 btnDecode.addEventListener('click', cipherDecode);
 // botón de validar inicio de sesión
+let enterCipher = document.getElementById("enterCipher"); 
 enterCipher.addEventListener('click', validateUser);
 // botón de cerrar sesión
 let close = document.getElementById('close');
 close.addEventListener('click', closeSesion);
 // botones de aumento y decremento de offset
+let offsetIncrement = document.getElementById("offsetIncrement"); 
 offsetIncrement.addEventListener("mousedown", offsetValueIncrement);
+let offsetDecrement = document.getElementById("offsetDecrement");  
 offsetDecrement.addEventListener("mousedown", offsetValueDecrement);
 offsetIncrement.addEventListener('mouseup', stopTimer);
 offsetIncrement.addEventListener('mouseleave', stopTimer);
@@ -43,14 +62,15 @@ function cipherEncode() {
 }
 
 function showModal(event) { 
-  event.stopPropagation(); 
+  event.stopPropagation();  
   modal.classList.replace("hide", "show");  
   
 }
 
 function hideModal(event) { 
-  event.stopPropagation();  
-  modal.classList.replace("show", "hide");  }
+  event.stopPropagation();   
+  modal.classList.replace("show", "hide");  
+}
 
 function cipherDecode() {
   let textEncode = '';
@@ -71,9 +91,12 @@ function validateUser(event) {
 
   let password = document.getElementById('password').value;
   let user = document.getElementById('user').value;
+  let userName = document.getElementById('userName');
+
 
   if (password == 'cipherlove') {
     if (user) { 
+    
     userName.innerHTML = user[0].toUpperCase() + user.slice(1);
     homeBoxOne.classList.replace(".show", "hide");
     homeBoxTwo.classList.replace("hide", "show");
