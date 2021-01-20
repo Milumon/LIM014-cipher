@@ -20,12 +20,13 @@ let btnPopUp = document.getElementById('btnPopUp');
 btnPopUp.addEventListener('click', showModal);  
 document.addEventListener("click", hideModal); 
 
-// botón de codificar
-let btnEncode = document.getElementById("btnEncode");
-btnEncode.addEventListener('click', cipherEncode);
+// botón de codificar  
+let btnEncode = document.getElementById("btnEncode");  
+btnEncode.addEventListener('click', cipherEncode); 
+ 
 // botón de decodificar
-let btnDecode = document.getElementById("btnDecode");
-btnDecode.addEventListener('click', cipherDecode);
+let btnDecode = document.getElementById("btnDecode"); 
+btnDecode.addEventListener('click', cipherDecode); 
 // botón de validar inicio de sesión
 let enterCipher = document.getElementById("enterCipher"); 
 enterCipher.addEventListener('click', validateUser);
@@ -56,22 +57,15 @@ function cipherEncode() {
   // obtener el valor del string
   let stringValue = document.getElementById('decode').value;
   // obtener el resultado del descifrado
+  try {
   Math.sign(offsetValue) == 1 ? textEncode = cipher.encode(offsetValue, stringValue) : textEncode = cipher.decode(Math.abs(offsetValue), stringValue)
   // asignar el valor al textArea
   encoded.value = textEncode;
+} catch (error) {
+  encoded.value = error.message ;
+ } 
 }
-
-function showModal(event) { 
-  event.stopPropagation();  
-  modal.classList.replace("hide", "show");  
-  
-}
-
-function hideModal(event) { 
-  event.stopPropagation();   
-  modal.classList.replace("show", "hide");  
-}
-
+ 
 function cipherDecode() {
   let textEncode = '';
   // obtener el valor del offset
@@ -79,9 +73,13 @@ function cipherDecode() {
   // obtener el valor del string
   let stringValue = document.getElementById('decode').value;
   // obtener el resultado del descifrado
+  try{ 
   Math.sign(offsetValue) == 1 ? textEncode = cipher.decode(offsetValue, stringValue) : textEncode = cipher.encode(Math.abs(offsetValue), stringValue)
   // asignar el valor al textArea
   encoded.value = textEncode;
+} catch (error) {
+  encoded.value = error.message ;
+ } 
 }
 
 
@@ -128,9 +126,7 @@ function closeSesion() {
   homeBoxTwo.classList.replace("show", "hide");
   homeBoxOne.classList.replace("hide", ".show");
 
-}
-
-
+} 
 
 function offsetValueIncrement() {
   let offsetValue = parseInt(document.getElementById('offset').value);
@@ -159,4 +155,16 @@ function offsetValueDecrement() {
   timer = setTimeout(function () {
     offsetValueDecrement();
   }, 200);
+}
+
+
+function showModal(event) { 
+  event.stopPropagation();  
+  modal.classList.replace("hide", "show");  
+  
+}
+
+function hideModal(event) { 
+  event.stopPropagation();   
+  modal.classList.replace("show", "hide");  
 }
