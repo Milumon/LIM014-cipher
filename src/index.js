@@ -119,8 +119,8 @@ function closeSesion() {
   }
 
   errorSubmit.innerHTML = "";
-  decode.innerHTML = "";
-  encoded.innerHTML = "";
+  decode.value = "";
+  encoded.value = "";
   offset.value = ""; 
 
   homeBoxTwo.classList.replace("show", "hide");
